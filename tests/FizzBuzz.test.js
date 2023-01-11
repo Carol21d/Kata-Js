@@ -1,4 +1,4 @@
-import { FizzBuzz, fizzbuzz2 } from "../src/scripts/FizzBuzz";
+import { FizzBuzz, fizzbuzz2,FizzBuzz3 } from "../src/scripts/FizzBuzz";
 
 describe.skip('FizzBuzz', () => {
     test('should return Buzz if is a divisible by 5', () => {
@@ -36,18 +36,14 @@ describe.skip('FizzBuzz', () => {
 
 
 
-// describe('FizzBuzz', () => {
-//     test('should return FizzBuzz if 1 to the 100', () => {
 
-//         //Given
-//         let numb;
-
-//         //When
-//         const result = fiz3(numb);
-
-
-//         //Then
-//         expect(result).toBe("FizzBuzz FizzBuzz");
+    test('should return FizzBuzz if 1 to the 100', () => {
+   for (let index = 0; index <=100; index++) {
+    const result= FizzBuzz3(index);
+    console.log(result);
+    }
+});
         
-//     });
-// });
+       
+        
+    
